@@ -101,10 +101,6 @@ function inputIsValidSubstraction(check){
         }
 }
 
-function nAppend(param){
-  inputElSubstraction.value += param;
-}
-
 function getDivizor1(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
@@ -117,3 +113,7 @@ function forMenu() {
       x.className = "topnav";
     }
   }
+//
+function nAppend(param){
+  inputElSubstraction.value += param;
+}
