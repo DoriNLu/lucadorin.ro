@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+}
+
+body{background-color: #f7786b;}
+
+
+.topnav {
+  display: flex;
+  width: 100%;
+  position:absolute;
+  z-index: 1;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .apps {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    color: black;
+    display: none;
+  }
+  .topnav a.apps {
+    margin-left: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .topnav.responsive .apps {
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    
+  }
+  
+}
+  
+.objectMulty{
+    background-color: #f7786b;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    
+    }
+            
+    .container{
+    background-color:lightblue;
+    padding: 4px;
+    margin-top: 200px;
+    box-shadow: 10px 10px 5px 4px #092834;
+    border-radius:10px;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    }
+    
+.scor, .intrebarea{
+  font-size: 20px;
+}
+
+.intrare{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    border: solid 2px ;
+    color: #66B032;
+    
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  gap: 10px;
+
+}
+
+#keys button{
+  font-size: 30px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.tipRaspuns {
+      border-radius:10px;
+      display: flex;
+      position:absolute;
+      padding-top: 10px;
+      height: 75px;
+      width: 97%;
+      z-index: 1;
+      background-color: #347B98;
+      display: none;
+      color: black;
+      
+    }
+
+    
+    .raspunsGresit {
+      animation: gresit 2s ;
+      display: block;
+      color:red;
+      font-size: 1.4em;
+      
+      
+    }
+    
+    
+    .raspunsCorect {
+      animation: corect 2s ;
+      display: block;
+      color:rgb(145, 230, 145);
+      font-size: 1.4em;
+      }
+    
+    @keyframes corect {
+      from {
+        
+      }
+      to {
+        
+     }
+    }
+
+    @keyframes gresit {
+        from {
+
+        }
+        to {
+          
+       }
+      }
+    
+    .intrare::placeholder{
+        color: lightgray;
+    }
+    
+    .buton{
+    background-color: #66B032;
+    color: white;
+    border: none;
+    }
+    
+    .taste:hover{
+        filter: brightness(0.9);
+    }
+
+    .footer{
+      position: fixed;
+      bottom: 0;
+    }
+
+      
+      
+
+    
